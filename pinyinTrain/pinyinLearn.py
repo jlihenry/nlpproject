@@ -39,45 +39,45 @@ def updateTranMap(preW,current,pinyinTran):
 	else:
 		pinyinTran[preW][current] += 1
 
+def pinyinLearnMethod():
+	outf = open('./pinyinTrain/pinyinModel.txt','w')
 
-outf = open('pinyinModel.txt','w')
-
-pinyinTran = {}
-with open('pinyinTrainData.txt','r') as f:
-	for line in f:
-		words = line.strip().split()
-		preW = ""
-		for w in words:
-			w = w.split('(')
-			if ("。" in w[0]) or ("，" in w[0]) or ("！" in w[0]) or ("：" in w[0]) or ("？" in w[0]) or ("......" in w[0]) or ("、" in w[0]) or ('"' in w[0]): 
-				preW = ""
-			if len(w) > 1:
-				current = remove(w[1])
-				updateTranMap(preW,current,pinyinTran)
-				preW = current
-
-
-with open('pinyinTrainData2.txt','r') as f:
-	for line in f:
-		words = line.strip().split()
-		preW = ""
-		for w in words:
-			if ("。" in w) or ("，" in w) or ("！" in w) or ("：" in w) or ("？" in w) or ("......" in w) or ("、" in w) or ('"' in w) or ('“' in w) or ('”' in w): 
-				preW = ""
-			else:
-				current = remove(w)
-				print current
-				updateTranMap(preW,current,pinyinTran)
-				preW = current
+	pinyinTran = {}
+	with open('./pinyinTrain/pinyinTrainData.txt','r') as f:
+		for line in f:
+			words = line.strip().split()
+			preW = ""
+			for w in words:
+				w = w.split('(')
+				if ("。" in w[0]) or ("，" in w[0]) or ("！" in w[0]) or ("：" in w[0]) or ("？" in w[0]) or ("......" in w[0]) or ("、" in w[0]) or ('"' in w[0]) or ('；' in w[0]): 
+					preW = ""
+				if len(w) > 1:
+					current = remove(w[1])
+					updateTranMap(preW,current,pinyinTran)
+					preW = current
 
 
-for word in pinyinTran:
-	outf.write(word)
-	outf.write('\n')
-	for word2 in pinyinTran[word]:
-		outf.write('%12s %12s' % (word2,str(pinyinTran[word][word2])))
+	with open('./pinyinTrain/pinyinTrainData2.txt','r') as f:
+		for line in f:
+			words = line.strip().split()
+			preW = ""
+			for w in words:
+				if ("。" in w) or ("，" in w) or ("！" in w) or ("：" in w) or ("？" in w) or ("......" in w) or ("、" in w) or ('"' in w) or ('“' in w) or ('”' in w) or ('；' in w): 
+					preW = ""
+				else:
+					current = remove(w)
+					updateTranMap(preW,current,pinyinTran)
+					preW = current
+
+
+	for word in pinyinTran:
+		outf.write(word)
 		outf.write('\n')
+		for word2 in pinyinTran[word]:
+			outf.write('%12s %12s' % (word2,str(pinyinTran[word][word2])))
+			outf.write('\n')
 
-outf.close()
+	outf.close()
+	print "Learning pinyin model finished."
 
 

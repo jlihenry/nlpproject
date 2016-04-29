@@ -2,7 +2,6 @@
         shou            1
         qiao            1
         qian            1
-         nan            1
        minɡ            3
          zen            1
       xionɡ            1
@@ -15,7 +14,7 @@
          jia            2
          jin            6
        ranɡ            4
-         wei            7
+         wei            8
           tu            2
           li            1
           lv            2
@@ -26,25 +25,24 @@
          cun            2
        jinɡ            5
           ta           38
-          yi           28
+          yi           29
        cenɡ            1
         ɡao            3
           di            3
-         dan            6
+         dan            7
          dao            4
-          ye           17
+          ye           18
          dai            3
           da            4
         jiao            3
-       conɡ            5
+       conɡ            6
          fan            1
        binɡ            4
-      chanɡ            3
+         lei            1
           du            1
           yu            7
           qu            2
          shu           14
-         lei            1
         chao            1
           ai            3
          zhu            1
@@ -56,7 +54,7 @@
         shen            6
       qionɡ            1
        donɡ            1
-          er           14
+          er           15
        tonɡ            2
           ru            7
          suo            4
@@ -71,6 +69,7 @@
          lai            1
           ri            2
          lun            4
+         cai            2
           ba           11
          dui            3
          ɡe            2
@@ -98,13 +97,13 @@
         ɡou            7
           ou            3
          zui            1
-         yue            3
+         yue            4
          zuo            4
          zao            1
           ci            4
           xi            3
         jian            4
-         zai           30
+         zai           31
        xinɡ            4
           lu            1
        hanɡ            1
@@ -137,6 +136,7 @@
         ɡei            1
       ɡonɡ            1
           hu            4
+         kai            1
        danɡ           11
        menɡ            2
           he            8
@@ -165,19 +165,19 @@
         bian            1
           an            1
         zhui            1
-      xianɡ            7
+      chanɡ            3
          qiu            2
          tan            2
          tai            1
-          ni           16
+          ni           18
           na           24
         ɡan            2
-         cai            2
+         nan            2
        linɡ            1
          liu            1
          hou            1
          zou            1
-         you           26
+         you           28
       zhenɡ            2
           nu            1
          pao            1
@@ -186,8 +186,8 @@
          nin            3
           fu            9
         zhou            1
-         kai            1
-         kan            5
+      xianɡ            7
+         kan            6
          hui            4
           fa            2
        zhuan            1
@@ -199,7 +199,7 @@
            e            3
           ke           13
           su            1
-          si            4
+          si            5
        yinɡ            2
           sa            1
          xia            2
@@ -312,7 +312,6 @@ ti
        zhuan            1
           zu            1
           ta            2
-          er            1
 te
          zhi            1
           de            2
@@ -343,7 +342,6 @@ jinɡ
           de            9
           hu            1
           bu            1
-      ；yue            1
           qu            1
           ke            1
          yan            2
@@ -413,7 +411,7 @@ ta
           ou            1
          dou            2
 conɡ
-       minɡ            1
+       minɡ            2
           fu            1
           wo            1
           na            2
@@ -725,10 +723,6 @@ xinɡ
           di            1
          qun            1
          che            5
-；conɡ
-       minɡ            1
-；wei
-          ma            1
 cha
           bu            1
          zhe            1
@@ -762,7 +756,6 @@ chi
           ni            3
           le            2
          wan            2
-         dan            1
           de            2
        banɡ            1
          hui            1
@@ -1105,7 +1098,6 @@ hou
          zai            1
           wo            2
           de            4
-         kan            1
        lenɡ            1
        lonɡ            2
          tui            1
@@ -1140,7 +1132,6 @@ lao
          ren            1
         lian            1
          shi            1
-         you            1
          tai            1
 fu
          qin           23
@@ -1351,7 +1342,6 @@ le
         tian            1
          tui            2
           ji            2
-         you            1
         shui            1
           qu            1
         shan            1
@@ -1597,7 +1587,7 @@ yi
         pian            3
          can            1
          zhi            6
-      xianɡ            4
+      xianɡ            5
           yi            6
          qie            4
         bian            6
@@ -1872,7 +1862,6 @@ ren
          zai            3
       jianɡ            1
        pinɡ            3
-      ；wei            1
          tan            1
          tou            1
           er            2
@@ -2045,9 +2034,6 @@ shuo
          chu            2
          shi            3
        honɡ            1
-nie
-          zu            1
-         zai            1
 shui
           yi            2
       zhonɡ            2
@@ -2131,9 +2117,9 @@ yue
           de            2
          hua            1
           la            1
+          ya            1
          hao            1
           tu            1
-         nan            1
      ɡuanɡ            4
           qi            2
         zhao            1
@@ -2237,7 +2223,7 @@ zai
           mo            1
           mi            1
        lenɡ            1
-         zhe            8
+         zhe            9
          can            1
        konɡ            1
         xian            1
@@ -2415,7 +2401,6 @@ nian
         qian            1
         chun            2
           na            1
-      ；zai            1
           de            4
          nan            1
          sui            1
@@ -2499,7 +2484,7 @@ hui
          qiu            1
          tan            1
          tai            1
-          ni            1
+       cenɡ            1
           le            1
          jia            6
          wei            1
@@ -2511,7 +2496,6 @@ hui
          chu            1
          hen            1
         ɡui            1
-       cenɡ            1
        qinɡ            1
           yi            1
           de            2
@@ -2568,8 +2552,6 @@ hen
        ɡuan            1
          you            1
        qinɡ            1
-；yue
-          ya            1
 bei
           yi            1
          hai            1
@@ -3386,7 +3368,6 @@ bai
          hua            2
           di            1
           wo            1
-       ；yi            1
          xue            1
          yue            1
          bai            1
@@ -3560,7 +3541,6 @@ jie
        minɡ            9
          qia            1
         xiao            1
-    ；conɡ            1
          wan            1
           le            1
           di            2
@@ -3750,7 +3730,6 @@ pa
       shanɡ            1
           wo            1
          bie            1
-          ye            1
          zou            1
        jinɡ            1
          hei            1
@@ -3990,8 +3969,9 @@ nin
        minɡ            1
        ranɡ            1
        qinɡ            1
-；yi
-      xianɡ            1
+nie
+          zu            1
+         zai            1
 zhuan
       lianɡ            1
          hua            1
@@ -4146,6 +4126,7 @@ wei
          mei            1
          ruo            1
          jie            1
+          ma            1
           ni            1
            e            1
          kou            1
@@ -4174,8 +4155,6 @@ cun
          zhe            1
         bian            1
      ɡuanɡ            2
-；zai
-         zhe            1
 cui
          rao            1
           de            1
@@ -4481,7 +4460,6 @@ jiao
           ne            1
         biao            1
          liu            1
-          si            1
       xianɡ            1
          shi            3
        yanɡ            1
@@ -4555,7 +4533,7 @@ huan
          yue            1
 ɡuo
           yi            3
-          ni            2
+          ni            1
           le            3
           qu            6
          lai            2

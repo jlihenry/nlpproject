@@ -5,16 +5,7 @@ import math
 
 from Trie.trie import *
 
-def hmmdecodeMethod():
-	transDic = {}
-	tagwordDic = {}
-	wordTag = {}
-	flag = 0
-	currentKey = ''
-
-	trie = Trie()
-	pinyinTrans = {}
-
+def learnPinyinModel(pinyinTrans,trie):
 	with open('./hmm/PinYin.txt','r') as f:
 		for line in f:
 			if len(line.strip()) > 0:
@@ -39,6 +30,19 @@ def hmmdecodeMethod():
 					pinyinTrans[key][word[0]] = int(word[1])
 					pinyinTrans[key]['total'] += int(word[1]) 
 
+def hmmdecodeMethod():
+	transDic = {}
+	tagwordDic = {}
+	wordTag = {}
+	flag = 0
+	currentKey = ''
+
+	trie = Trie()
+	pinyinTrans = {}
+
+	outf = open('result.txt','w')
+	
+	learnPinyinModel(pinyinTrans,trie)
 
 	with open('./hmm/hmmmodel.txt','r') as f:
 		for s in f:
@@ -105,6 +109,8 @@ def hmmdecodeMethod():
 								maxP = pinyinTrans[preWord][wordCan] 
 								word = wordCan
 
+				outf.write(str(word) + ' ')
+
 				for tag in wordTagDic[i-1]:
 					if word not in wordTag:
 						wordTag[word] = set()
@@ -148,6 +154,9 @@ def hmmdecodeMethod():
 				finalTag = wordTagDic[j][finalTag]['pre']
 				j -= 1
 			print output
+			outf.write('\n' + str(output) + '\n')
+
+	outf.close()
 
 
 

@@ -56,7 +56,8 @@ class Trie:
 	def traverse_dfs(self, str, node):
 
 		if node.isPinYin == True:
-			print str
+			pass
+			#print str
 		for c in node.child:
 			self.traverse_dfs(str + c, node.child[c])
 
@@ -91,7 +92,7 @@ class Trie:
 			if node.isPinYin == True : 
 				ans.append(cur_str)
 			else:
-				print "%s in trie, but not a PinYin" % search_str
+				#print "%s in trie, but not a PinYin" % search_str
 				self.get_PinYin_from_children(node, cur_str, ans)
 			return 
 
@@ -101,11 +102,11 @@ class Trie:
 		# do the pinyin correction algorithm
 		if cur_letter not in node.child:
 			
-			print "letter %r is not in the trie, try to modify" % cur_letter
+			#print "letter %r is not in the trie, try to modify" % cur_letter
 
 			# do the keyboard word modification 
 			if cur_letter in self.key_modify_set and self.key_modify_set[cur_letter] in node.child:
-				print "change letter %r to %r" % (cur_letter, self.key_modify_set[cur_letter])
+				#print "change letter %r to %r" % (cur_letter, self.key_modify_set[cur_letter])
 				cur_letter = self.key_modify_set[cur_letter]
 
 				self.search_PinYin_dfs(node.child[cur_letter], index + 1, search_str,
@@ -114,8 +115,8 @@ class Trie:
 
 			#find the most matching pinyins
 			else:
-				print "cannot modify letter %r with key_modify_set" % cur_letter
-				print "find the most matching one start from cur node"	
+				#print "cannot modify letter %r with key_modify_set" % cur_letter
+				#print "find the most matching one start from cur node"	
 
 				self.max_MatchVal = 0
 

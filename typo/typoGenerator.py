@@ -126,37 +126,38 @@ def getNew(ori):
 		}.get(ori,'')
 
 
-outf = open('typo.txt','w')
+def generateTypo():
+	outf = open('./typo/typo.txt','w')
 
-with open('testData.txt','r') as f:
-	for s in f:
-		words = s.split()
-		for word in words:
-			ctype = 3#random.randrange(0,4)
-			pos = random.randrange(0,len(word))
-			#add 
-			if ctype == 0:
-				letter = getNew(word[pos])
-				shift = random.randrange(0,2)
-				pos += shift
-				word = word[:pos] + letter + word[pos:]
-			#remove	a letter at random position
-			elif ctype == 1:
-				word = word[:pos] + word[pos+1:]
-			#replace a letter with its neighbor 	
-			elif ctype == 2:
-				newLetter = getNew(word[pos])
-				word = word[:pos] + str(newLetter) + word[pos+1:]
-			#reorder
-			else:
-				letter = word[pos]
-				word = word[:pos] + word[pos+1:]
-				pos = random.randrange(0,len(word)+1)
-				word = word[:pos] + letter + word[pos:]
-			outf.write(word)
-			outf.write(' ')
-		outf.write('\n')
+	with open('testData.txt','r') as f:
+		for s in f:
+			words = s.split()
+			for word in words:
+				ctype = random.randrange(0,4)
+				pos = random.randrange(0,len(word))
+				#add 
+				if ctype == 0:
+					letter = getNew(word[pos])
+					shift = random.randrange(0,2)
+					pos += shift
+					word = word[:pos] + letter + word[pos:]
+				#remove	a letter at random position
+				elif ctype == 1:
+					word = word[:pos] + word[pos+1:]
+				#replace a letter with its neighbor 	
+				elif ctype == 2:
+					newLetter = getNew(word[pos])
+					word = word[:pos] + str(newLetter) + word[pos+1:]
+				#reorder
+				else:
+					letter = word[pos]
+					word = word[:pos] + word[pos+1:]
+					pos = random.randrange(0,len(word)+1)
+					word = word[:pos] + letter + word[pos:]
+				outf.write(word)
+				outf.write(' ')
+			outf.write('\n')
 
-outf.close()
+	outf.close()
 
 				
